@@ -36,6 +36,20 @@ This project is developed as a final year project by Computer Science Engineerin
 
 This project implements a forest fire detection system using computer vision and deep learning techniques. The system can analyze images and detect the presence of fire with high accuracy, helping in early fire detection and prevention.
 
+### 📄 Published Research
+
+This project is based on our research paper published in IEEE:
+
+**Title**: Early Forest Fire Detection Using Enhanced YOLOv11 with Contrast and Dynamic Attention Mechanisms
+
+**Authors**: T. Jai Prakash, G. Rama Krishna Prasad
+
+**Published in**: IEEE Xplore
+
+**DOI/Link**: [https://ieeexplore.ieee.org/document/11465334](https://ieeexplore.ieee.org/document/11465334)
+
+**Abstract**: This research presents an enhanced YOLOv11-based approach for early forest fire detection, incorporating contrast enhancement and dynamic attention mechanisms to improve detection accuracy in various environmental conditions.
+
 ## ✨ Features
 
 - 🔥 Real-time fire detection from uploaded images
@@ -219,14 +233,30 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## � Acknowledgments
+## 🙏 Acknowledgments
 
 - Our sincere gratitude to Narasaraopeta Engineering College for providing the resources and support
 - Thanks to our project guide and faculty members for their valuable guidance
+- IEEE for publishing our research paper on forest fire detection
 - YOLO team for the excellent object detection framework
 - Forest fire dataset contributors
 - Flask and PyTorch communities for comprehensive documentation
 - Google Colab for providing free GPU resources for model training
+
+## 📚 Citation
+
+If you use this work in your research, please cite our IEEE paper:
+
+```bibtex
+@inproceedings{jaiprakash2024forest,
+  title={Early Forest Fire Detection Using Enhanced YOLOv11 with Contrast and Dynamic Attention Mechanisms},
+  author={Jai Prakash, T. and Rama Krishna Prasad, G.},
+  booktitle={IEEE Conference Proceedings},
+  year={2024},
+  organization={IEEE},
+  url={https://ieeexplore.ieee.org/document/11465334}
+}
+```
 
 ## 📧 Contact
 
