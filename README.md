@@ -193,7 +193,17 @@ jupyter notebook "Forest_Fire_Detection_Using_Computer_Vision (1).ipynb"
 
 ## 📸 Screenshots
 
-*Add screenshots of your application here*
+### Home Page
+![Home Page](screenshots/Screenshot%202026-04-08%20103017.png)
+
+### Fire Detection Interface
+![Fire Detection Interface](screenshots/Screenshot%202026-04-08%20103044.png)
+
+### Image Upload and Analysis
+![Image Upload](screenshots/Screenshot%202026-04-08%20103126.png)
+
+### Detection Results
+![Detection Results](screenshots/Screenshot%202026-04-08%20103635.png)
 
 ## 🤝 Contributing
 
