@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Fire Detection - AI Vision System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='fire_detection.css') }}">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background-grid"></div>
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo-section">
+                <div class="logo-icon">🔥</div>
+                <span class="logo-text">Forest Fire Detection System</span>
+            </div>
+            <div class="nav-badges">
+                <span class="badge">Computer Vision</span>
+                <span class="badge">Deep Learning</span>
+                <span class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span>System Active</span>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="main-container">
+
+        <!-- Header Section -->
+        <header class="hero-section">
+            <h1 class="main-title">
+                <span class="title-line">Real-Time</span>
+                <span class="title-line gradient-text">Forest Fire Detection</span>
+            </h1>
+            <p class="subtitle">Advanced Computer Vision Monitoring System</p>
+        </header>
+
+        <!-- Content Grid -->
+        <div class="content-grid">
+
+            <!-- Upload Panel -->
+            <section class="upload-panel glass-panel">
+                <div class="panel-header">
+                    <h2>Upload Forest Image</h2>
+                    <span class="panel-badge">Image Analysis</span>
+                </div>
+
+                <div class="upload-zone" id="uploadZone">
+                    <div class="upload-content" id="uploadContent">
+                        <div class="upload-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="17 8 12 3 7 8"></polyline>
+                                <line x1="12" y1="3" x2="12" y2="15"></line>
+                            </svg>
+                        </div>
+                        <h3>Drag & Drop Image Here</h3>
+                        <p>or click to browse</p>
+                        <div class="supported-formats">Supports: JPG, PNG, JPEG</div>
+                    </div>
+
+                    <!-- Image Preview Container -->
+                    <div class="image-preview-container hidden" id="imagePreview">
+                        <img id="previewImage" src="" alt="Preview">
+
+                        <!-- Scanner Animation -->
+                        <div class="scanner-overlay" id="scannerOverlay">
+                            <div class="scanner-line"></div>
+                            <div class="scanner-grid"></div>
+                            <div class="corner-bracket top-left"></div>
+                            <div class="corner-bracket top-right"></div>
+                            <div class="corner-bracket bottom-left"></div>
+                            <div class="corner-bracket bottom-right"></div>
+                            <div class="pulse-wave"></div>
+                        </div>
+
+                        <!-- Processing Overlay -->
+                        <div class="processing-overlay hidden" id="processingOverlay">
+                            <div class="processing-spinner"></div>
+                            <p class="processing-text">Analyzing Image...</p>
+                        </div>
+                    </div>
+
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                </div>
+
+                <button class="analyze-btn" id="analyzeBtn" disabled>
+                    <span class="btn-text">Analyze Image</span>
+                    <span class="btn-icon">→</span>
+                </button>
+            </section>
+
+            <!-- Model Selection Panel -->
+            <section class="model-panel glass-panel">
+                <div class="panel-header">
+                    <h2>Model Selection</h2>
+                    <span class="panel-badge">AI Engine</span>
+                </div>
+
+                <div class="model-grid">
+                    <button class="model-card active" data-model="model1">
+                        <div class="model-indicator"></div>
+                        <span class="model-name">YOLOv9</span>
+                    </button>
+                    <button class="model-card" data-model="model2">
+                        <div class="model-indicator"></div>
+                        <span class="model-name">YOLOv11 (Best Model)</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Result Panel -->
+            <section class="result-panel glass-panel" id="resultPanel">
+                <div class="panel-header">
+                    <h2>Detection Result</h2>
+                    <span class="panel-badge">Analysis Output</span>
+                </div>
+
+                <div class="result-display" id="resultDisplay">
+                    <div class="result-placeholder">
+                        <div class="placeholder-icon">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 16v-4"></path>
+                                <path d="M12 8h.01"></path>
+                            </svg>
+                        </div>
+                        <p>Awaiting Analysis...</p>
+                    </div>
+
+                    <!-- Fire Detected State -->
+                    <div class="result-state hidden" id="fireDetected">
+                        <div class="result-icon fire-icon">
+                            <svg width="100" height="100" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2c-1.5 4.3-4 6-7 7 3.5 1.5 6 4 7 8 1-4 3.5-6.5 7-8-3-1-5.5-2.7-7-7z"/>
+                            </svg>
+                            <div class="fire-particles"></div>
+                        </div>
+                        <h3 class="result-title fire-title">FOREST FIRE DETECTED</h3>
+                        <p class="result-message">High fire probability identified in image</p>
+                        <div class="alert-indicator">⚠ ALERT</div>
+                    </div>
+
+                    <!-- No Fire State -->
+                    <div class="result-state hidden" id="noFire">
+                        <div class="result-icon safe-icon">
+                            <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="result-title safe-title">NO FOREST FIRE DETECTED</h3>
+                        <p class="result-message">Image analysis complete - Forest safe</p>
+                        <div class="safe-indicator">✓ SAFE</div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Forest Fire Detection System © 2024 | Computer Vision & Deep Learning Research Project</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='fire_detection.js') }}"></script>
+</body>
+</html>
