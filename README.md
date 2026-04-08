@@ -2,9 +2,9 @@
 
 A deep learning-based forest fire detection system using YOLO (You Only Look Once) models with a Flask web interface for real-time fire detection from images.
 
-## � Team Members
+## 👥 Team Members
 
-This project is developed as a final year project by Computer Science Engineering (AI) students from Narasaraopeta Engineering College.
+This project is developed as a final year project by Computer Science Engineering (**Artificial Intelligence**) students from Narasaraopeta Engineering College.
 
 ### Team Leader
 **T. Jai Prakash**
