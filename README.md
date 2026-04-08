@@ -2,13 +2,31 @@
 
 A deep learning-based forest fire detection system using YOLO (You Only Look Once) models with a Flask web interface for real-time fire detection from images.
 
+## � Team Members
+
+This project is developed as a final year project by Computer Science Engineering (AI) students from Narasaraopeta Engineering College.
+
+### Team Leader
+**T. Jai Prakash**
+- GitHub: [@Jaiprakash14](https://github.com/Jaiprakash14)
+- Email: jaiprakashtirupathi97355@gmail.com
+- Role: Deep Learning Model Development & Training
+
+### Team Member
+**G. Rama Krishna Prasad**
+- GitHub: [@Ramu-2003](https://github.com/Ramu-2003)
+- Email: ramu4012y@gmail.com
+- Role: Web Application Development & Integration
+
 ## 📋 Table of Contents
+- [Team Members](#team-members)
 - [Overview](#overview)
 - [Features](#features)
 - [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Deep Learning Model Training](#deep-learning-model-training)
+- [Work Distribution](#work-distribution)
 - [Technologies Used](#technologies-used)
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
@@ -155,6 +173,24 @@ jupyter notebook "Forest_Fire_Detection_Using_Computer_Vision (1).ipynb"
 - **Image Processing**: Werkzeug 2.3.7
 - **Model Training**: Python, PyTorch, Google Colab
 
+## 👨‍💻 Work Distribution
+
+### T. Jai Prakash (Team Leader)
+- Deep learning model architecture design
+- YOLO model training and optimization
+- Dataset collection and preprocessing
+- Model evaluation and performance tuning
+- Jupyter notebook development for model training
+- Integration of trained models with the application
+
+### G. Rama Krishna Prasad
+- Flask web application development
+- Frontend design and user interface implementation
+- Backend API development for image upload and prediction
+- Static file management (CSS, JavaScript)
+- HTML template creation and responsive design
+- Project deployment and GitHub repository management
+
 ## 📸 Screenshots
 
 *Add screenshots of your application here*
@@ -173,16 +209,14 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 👨‍💻 Author
+## � Acknowledgments
 
-**Ramu**
-- GitHub: [@Ramu-2003](https://github.com/Ramu-2003)
-
-## 🙏 Acknowledgments
-
-- Thanks to the YOLO team for the amazing object detection framework
+- Our sincere gratitude to Narasaraopeta Engineering College for providing the resources and support
+- Thanks to our project guide and faculty members for their valuable guidance
+- YOLO team for the excellent object detection framework
 - Forest fire dataset contributors
-- Flask community for excellent documentation
+- Flask and PyTorch communities for comprehensive documentation
+- Google Colab for providing free GPU resources for model training
 
 ## 📧 Contact
 
