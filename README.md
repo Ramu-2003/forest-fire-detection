@@ -34,21 +34,15 @@ This project is developed as a final year project by Computer Science Engineerin
 
 ## 🌟 Overview
 
-This project implements a forest fire detection system using computer vision and deep learning techniques. The system can analyze images and detect the presence of fire with high accuracy, helping in early fire detection and prevention.
+This project implements an advanced forest fire detection system using state-of-the-art computer vision and deep learning techniques. The system leverages enhanced YOLO models to analyze images and detect the presence of fire with high accuracy, enabling early fire detection and prevention to protect our forests.
 
 ### 📄 Published Research
 
-This project is based on our research paper published in IEEE:
+Our research work has been published in IEEE Xplore, contributing to the advancement of forest fire detection technology.
 
-**Title**: Early Forest Fire Detection Using Enhanced YOLOv11 with Contrast and Dynamic Attention Mechanisms
+**Paper**: [Early Forest Fire Detection Using Enhanced YOLOv11 with Contrast and Dynamic Attention Mechanisms](https://ieeexplore.ieee.org/document/11465334)
 
-**Authors**: T. Jai Prakash, G. Rama Krishna Prasad
-
-**Published in**: IEEE Xplore
-
-**DOI/Link**: [https://ieeexplore.ieee.org/document/11465334](https://ieeexplore.ieee.org/document/11465334)
-
-**Abstract**: This research presents an enhanced YOLOv11-based approach for early forest fire detection, incorporating contrast enhancement and dynamic attention mechanisms to improve detection accuracy in various environmental conditions.
+**Authors**: T. Jai Prakash & G. Rama Krishna Prasad
 
 ## ✨ Features
 
@@ -237,26 +231,11 @@ This project is open source and available under the [MIT License](LICENSE).
 
 - Our sincere gratitude to Narasaraopeta Engineering College for providing the resources and support
 - Thanks to our project guide and faculty members for their valuable guidance
-- IEEE for publishing our research paper on forest fire detection
+- IEEE for publishing our research work
 - YOLO team for the excellent object detection framework
 - Forest fire dataset contributors
 - Flask and PyTorch communities for comprehensive documentation
 - Google Colab for providing free GPU resources for model training
-
-## 📚 Citation
-
-If you use this work in your research, please cite our IEEE paper:
-
-```bibtex
-@inproceedings{jaiprakash2024forest,
-  title={Early Forest Fire Detection Using Enhanced YOLOv11 with Contrast and Dynamic Attention Mechanisms},
-  author={Jai Prakash, T. and Rama Krishna Prasad, G.},
-  booktitle={IEEE Conference Proceedings},
-  year={2024},
-  organization={IEEE},
-  url={https://ieeexplore.ieee.org/document/11465334}
-}
-```
 
 ## 📧 Contact
 
