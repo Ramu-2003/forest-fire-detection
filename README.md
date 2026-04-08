@@ -229,13 +229,13 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🙏 Acknowledgments
 
-- Our sincere gratitude to Narasaraopeta Engineering College for providing the resources and support
-- Thanks to our project guide and faculty members for their valuable guidance
-- IEEE for publishing our research work
-- YOLO team for the excellent object detection framework
-- Forest fire dataset contributors
-- Flask and PyTorch communities for comprehensive documentation
-- Google Colab for providing free GPU resources for model training
+- Our sincere gratitude to Narasaraopeta Engineering College for providing the resources and support throughout this research
+- Special thanks to our project guide and faculty members for their invaluable guidance and mentorship
+- IEEE for recognizing and publishing our research work, providing a platform to contribute to the scientific community
+- YOLO team for the excellent object detection framework that made this project possible
+- Forest fire dataset contributors for providing essential training data
+- Flask and PyTorch communities for comprehensive documentation and support
+- Google Colab for providing free GPU resources that accelerated our model training
 
 ## 📧 Contact
 
